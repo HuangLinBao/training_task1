@@ -13,29 +13,15 @@ document.querySelector("#app").innerHTML = `
         <input type="text" name="" required="">
         <label>Email Address*</label>
       </div>
-      <div class="select">
-        <details class="custom-select">
-          <summary class="radios">
-            <input type="radio" name="item" id="default" title="Select Touring Package" checked>
-            <input type="radio" name="item" id="item1" title="Item 1">
-            <input type="radio" name="item" id="item2" title="Item 2">
-          </summary>
-        <ul class="list">
-          <li>
-            <label for="item1">
-              Item 1
-              <span></span>
-            </label>
-          </li>
-          <li>
-          <label for="item2">Item 2</label>
-          </li>
-        </ul>
-      </details>
-    </div>
+      <div class="custom-select">
+        <select>
+          <option value="">GOA</option>
+          <option value="">One Way</option>
+        </select>
+</div>
       <div class ="field date">
         <label for="fname">Arrival Date*:</label><br>
-        <input type="date" id="fname" placeholder="MM/DD/YYYY"><br><br>
+        <input type="date" id="fname" placeholder="MM/DD/YYYY">
       </div>
       <div class="avail_rb">
       <label for="fname">What would you want to avail*:</label><br>
