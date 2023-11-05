@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: #d2dae2;
   /* background-color: #060513; */
-  background: linear-gradient(45deg, #060513 50%, #130f40 100%);
+  background: linear-gradient(45deg, #060513 40%, #130f40 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +22,13 @@
 }
 
 .form {
-  background-color: #13142b;
+  /* From https://css.glass */
+  background: rgba(6, 5, 19, 0.47);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.7px);
+  -webkit-backdrop-filter: blur(14.7px);
+  border: 1px solid rgba(6, 5, 19, 0.3);
   max-width: 100%;
   position: relative;
   display: flex;
@@ -30,7 +36,6 @@
   justify-content: center;
   align-items: flex-start;
   border-radius: 25px;
-  box-shadow: 0 2px 4px rgba(236, 240, 241, 0.5);
   padding: 2rem;
 }
 
