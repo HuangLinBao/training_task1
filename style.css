@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: #d2dae2;
-  background-color: #1e272e;
+  /* background-color: #060513; */
+  background: linear-gradient(45deg, #060513 50%, #130f40 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,18 +19,19 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  border: 1px solid white;
 }
 
 .form {
+  background-color: #13142b;
   max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  padding: 1rem;
+  align-items: flex-start;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(236, 240, 241, 0.5);
+  padding: 2rem;
 }
 
 .field {
@@ -81,7 +83,7 @@ select {
   width: 100%;
   font-size: 1.15rem;
   padding: 0.675em 6em 0.675em 1em;
-  background-color: #222f3e;
+  background-color: #13142b;
   border: 1px solid transparent;
   border-bottom: 1px solid #00a8ff;
   border-radius: 0.25rem;
@@ -126,7 +128,7 @@ select {
 .container {
   display: block;
   position: relative;
-  margin: 5px auto;
+  margin: 5px;
   height: auto;
   width: 350px;
   padding: 5px;
@@ -222,7 +224,8 @@ input[type="radio"]:checked ~ label {
 
 /* Discount code Field */
 .discount {
-  margin-top: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Terms of service */
@@ -231,14 +234,14 @@ input[type="radio"]:checked ~ label {
   flex-direction: column;
 }
 .termsAndConditions .tLabel {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .btn-switch {
   width: 150px;
   font-size: 1.3em;
   position: relative;
   display: inline-block;
-  margin: 20px auto;
+  margin: 20px;
   padding: 35px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -279,6 +282,7 @@ input[type="radio"]:checked ~ label {
 .btn-switch__radio_yes:checked ~ .btn-switch__label_no .btn-switch__txt {
   opacity: 0;
 }
+
 .btn-switch__label:before {
   content: "";
   position: absolute;
@@ -288,13 +292,15 @@ input[type="radio"]:checked ~ label {
   bottom: 0;
   left: 0;
   height: 80px;
-  background: #f0f0f0;
+  background: #ff7979;
+
+  /* background: linear-gradient(45deg, #060513 40%, #130f40 100%); */
   border-radius: 3em;
-  box-shadow: inset 0 0.0715em 0.3572em rgba(43, 43, 43, 0.05);
+  box-shadow: inset 0 0.0715em 0.3572em rgba(15, 14, 14, 0.05);
   transition: background 0.2s ease-in-out;
 }
 .btn-switch__radio_yes:checked ~ .btn-switch__label:before {
-  background: #6ad500;
+  background: #00a8ff;
 }
 .btn-switch__label_no:after {
   content: "";
@@ -320,6 +326,9 @@ input[type="radio"]:checked ~ label {
 .btn-switch__radio_yes:checked ~ .btn-switch__label_no:before {
   z-index: 1;
 }
+.btn-switch__radio_no:checked ~ .btn-switch__label_no {
+  color: #130f40;
+}
 .btn-switch__radio_yes:checked ~ .btn-switch__label_yes {
   color: #fff;
 }
@@ -327,12 +336,12 @@ input[type="radio"]:checked ~ label {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  border: 3px solid transparent;
+  padding: 1.2em 2.3em;
+  font-size: 1.2em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #060513;
   cursor: pointer;
   transition: border-color 0.25s;
 }

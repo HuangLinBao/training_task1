@@ -24,7 +24,7 @@ document.querySelector("#app").innerHTML = `
       <input type="date" id="fname" placeholder="MM/DD/YYYY">
     </div>
     <div class="container">
-      <h2>Your favorite thing in the world:</h2>
+      <h2>Wahat would you want to avail*:</h2>
         <ul>
           <li>
             <input type="radio" id="f-option" name="selector">
