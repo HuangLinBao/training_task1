@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "training-task1/",
+  base: "training_task1/",
   // Specify the entry point of your app (usually an HTML file)
   build: {
     rollupOptions: {
