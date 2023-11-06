@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 
+//vite
 export default defineConfig({
   base: "/training_task1/",
   // Specify the entry point of your app (usually an HTML file)
