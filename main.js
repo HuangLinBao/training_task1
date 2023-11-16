@@ -3,7 +3,7 @@ import "./style.css";
 document.querySelector("#app").innerHTML = `
   <div>  
     <form class="form">
-      <h1>Travel Form</h1>
+      <h1>Travel Reservation form</h1>
       <p class="mandotory"> *denotes mandotory</p>
       <div class="field">
         <input type="text" name="" required="">
