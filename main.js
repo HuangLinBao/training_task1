@@ -57,7 +57,9 @@ document.querySelector("#app").innerHTML = `
       </div>
     </div>
     <div class="card">
-      <button id="counter" type="button">Complete Rreservation</button>
+      <button id="counter" type="button"><span></span>
+      Complete Rreservation
+      </button>
       </div>
     </div>
   </div>
