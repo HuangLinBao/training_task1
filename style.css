@@ -1,4 +1,11 @@
 :root {
+  --gradient: linear-gradient(
+    45deg,
+    rgba(6, 5, 19, 1) 0%,
+    rgba(19, 15, 64, 1) 50%,
+    rgba(33, 36, 91, 1) 71%,
+    rgba(85, 91, 208, 1) 100%
+  );
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -6,22 +13,29 @@
   color-scheme: light dark;
   color: #d2dae2;
   /* background-color: #060513; */
-  background: linear-gradient(45deg, #060513 40%, #130f40 100%);
+  background-size: 400%;
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite alternate;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 #app {
-  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .form {
+  width: 1280px;
   /* From https://css.glass */
   background: rgba(6, 5, 19, 0.47);
   border-radius: 16px;
@@ -29,7 +43,6 @@
   backdrop-filter: blur(14.7px);
   -webkit-backdrop-filter: blur(14.7px);
   border: 1px solid rgba(6, 5, 19, 0.3);
-  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -38,6 +51,7 @@
   border-radius: 25px;
   padding: 2rem;
 }
+/* custom field */
 
 .field {
   position: relative;
@@ -72,6 +86,7 @@
   color: #00a8ff;
   font-size: 12px;
 }
+
 /* Custom Select */
 
 .custom-select {
@@ -337,6 +352,7 @@ input[type="radio"]:checked ~ label {
 .btn-switch__radio_yes:checked ~ .btn-switch__label_yes {
   color: #fff;
 }
+
 /* Button */
 
 button {
