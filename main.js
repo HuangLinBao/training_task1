@@ -2,7 +2,7 @@ import "./style.css";
 
 document.querySelector("#app").innerHTML = `
   <div>  
-    <div class="form">
+    <form class="form">
       <h1>Travel Reservation form</h1>
       <p class="mandotory"> *denotes mandotory</p>
       <div class="field">
@@ -59,6 +59,6 @@ document.querySelector("#app").innerHTML = `
     <div class="card">
       <button id="counter" type="button">Complete Rreservation</button>
       </div>
-    </div>
+    </form>
   </div>
 `;
